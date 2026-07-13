@@ -65,3 +65,166 @@ footer a {
 footer a:hover {
     color: white;
 }
+/* Keeps the footer at the bottom of short pages */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Quiz page layout */
+.quiz-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.quiz-introduction {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+}
+
+/* Styles each quiz question */
+.question-card {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #d9e0e7;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.question-card h3 {
+    margin-top: 0;
+}
+
+.question-card label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.question-card input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 12px;
+    padding: 12px;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.question-card input[type="radio"],
+.question-card input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Quiz buttons */
+.quiz-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.quiz-buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #1769aa;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0e4f82;
+}
+
+.reset-button {
+    background-color: #555555;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #333333;
+}
+
+/* Individual question feedback */
+.question-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.correct {
+    color: #146c2e;
+    background-color: #e8f6ec;
+    border-left: 5px solid #146c2e;
+}
+
+.incorrect {
+    color: #a61b1b;
+    background-color: #fdeaea;
+    border-left: 5px solid #a61b1b;
+}
+
+/* Overall quiz score */
+.quiz-results {
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+}
+
+.pass-result {
+    color: #146c2e;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.fail-result {
+    color: #a61b1b;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Mobile quiz layout */
+@media screen and (max-width: 700px) {
+    .quiz-buttons {
+        flex-direction: column;
+    }
+
+    .quiz-buttons button {
+        width: 100%;
+    }
+
+    .question-card {
+        padding: 18px;
+    }
+}
