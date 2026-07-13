@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTTP Knowledge Quiz</title>
+
+    <!-- Connects this page to the main CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website header and navigation -->
+    <header>
+        <h1>The Evolution of HTTP</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="history.html">History</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="key-concepts.html">Key Concepts</a>
+            <a href="versions-security.html">Versions &amp; Security</a>
+            <a href="references.html">References</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+
+    <!-- Main quiz content -->
+    <main class="quiz-container">
+
+        <section class="quiz-introduction">
+            <h2>HTTP Self-Assessment Quiz</h2>
+
+            <p>
+                Complete this quiz after reviewing the information on this
+                website. The quiz contains five questions about HTTP history,
+                request methods, security, and modern HTTP versions.
+            </p>
+
+            <p>
+                Each question is worth 20 points. A score of 70% or higher is
+                required to pass.
+            </p>
+        </section>
+
+        <!-- The form contains all quiz questions -->
+        <form id="httpQuiz">
+
+            <!-- Question 1: Fill in the blank -->
+            <section class="question-card" id="question1">
+                <h3>Question 1: Fill in the Blank</h3>
+
+                <label for="q1">
+                    What type of HTTP message does a browser send to a web
+                    server when it asks for information?
+                </label>
+
+                <input
+                    type="text"
+                    id="q1"
+                    name="q1"
+                    placeholder="Enter your answer"
+                >
+
+                <div class="question-result" id="result1"></div>
+            </section>
+
+            <!-- Question 2: Multiple choice -->
+            <section class="question-card" id="question2">
+                <h3>Question 2: Multiple Choice</h3>
+
+                <p>Which request method was supported by HTTP/0.9?</p>
+
+                <label>
+                    <input type="radio" name="q2" value="POST">
+                    POST
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="GET">
+                    GET
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="PUT">
+                    PUT
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="DELETE">
+                    DELETE
+                </label>
+
+                <div class="question-result" id="result2"></div>
+            </section>
+
+            <!-- Question 3: Multiple choice -->
+            <section class="question-card" id="question3">
+                <h3>Question 3: Multiple Choice</h3>
+
+                <p>Which HTTP version introduced multiplexing?</p>
+
+                <label>
+                    <input type="radio" name="q3" value="HTTP/0.9">
+                    HTTP/0.9
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="HTTP/1.0">
+                    HTTP/1.0
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="HTTP/2">
+                    HTTP/2
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="HTTP/1.1">
+                    HTTP/1.1
+                </label>
+
+                <div class="question-result" id="result3"></div>
+            </section>
+
+            <!-- Question 4: Multiple choice -->
+            <section class="question-card" id="question4">
+                <h3>Question 4: Multiple Choice</h3>
+
+                <p>Which technology helps protect HTTP communication?</p>
+
+                <label>
+                    <input type="radio" name="q4" value="FTP">
+                    FTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="TLS">
+                    TLS
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="HTML">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="CSS">
+                    CSS
+                </label>
+
+                <div class="question-result" id="result4"></div>
+            </section>
+
+            <!-- Question 5: Multiple selection -->
+            <section class="question-card" id="question5">
+                <h3>Question 5: Select All That Apply</h3>
+
+                <p>Which of the following are valid HTTP request methods?</p>
+
+                <label>
+                    <input type="checkbox" name="q5" value="GET">
+                    GET
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q5" value="POST">
+                    POST
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q5" value="DELETE">
+                    DELETE
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q5" value="SMTP">
+                    SMTP
+                </label>
+
+                <div class="question-result" id="result5"></div>
+            </section>
+
+            <!-- Quiz control buttons -->
+            <div class="quiz-buttons">
+                <button type="submit" class="submit-button">
+                    Submit Quiz
+                </button>
+
+                <button type="button" id="resetButton" class="reset-button">
+                    Retake Quiz
+                </button>
+            </div>
+        </form>
+
+        <!-- Overall results are displayed here -->
+        <section id="quizResults" class="quiz-results" aria-live="polite">
+            <h2>Your Quiz Results</h2>
+
+            <p id="passFail"></p>
+            <p id="totalScore"></p>
+        </section>
+
+    </main>
+
+    <!-- Footer stays at the bottom of short pages -->
+    <footer>
+        <p>&copy; 2026 Mario McIntosh | IT 3203 Web Development Project</p>
+    </footer>
+
+    <!-- Connects the quiz page to the JavaScript file -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
