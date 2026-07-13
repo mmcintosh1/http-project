@@ -11,14 +11,14 @@
 
 <header>
     <h1>The Evolution of HTTP</h1>
-    <p>HTTP Versions and Security</p>
+    <p>HTTP Versions and Web Security</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="history.html">History</a>
     <a href="how-it-works.html">How HTTP Works</a>
-    <a href="versions-security.html">Versions & Security</a>
+    <a href="versions-security.html">Versions &amp; Security</a>
     <a href="key-concepts.html">Key Concepts</a>
     <a href="references.html">References</a>
     <a href="about.html">About</a>
@@ -28,35 +28,78 @@
 <main>
 
 <section>
-    <h2>HTTP Versions</h2>
-
+    <h2>HTTP/0.9</h2>
     <p>
-        HTTP has gone through several major versions as the web has grown.
-        Each version improved how browsers and servers communicate.
+        HTTP/0.9 was the earliest and simplest version of HTTP. It only
+        supported the GET method and returned basic HTML documents without
+        status codes or headers.
     </p>
-
-    <ul>
-        <li><strong>HTTP/0.9:</strong> The earliest version, used for simple HTML documents.</li>
-        <li><strong>HTTP/1.0:</strong> Added headers, status codes, and more file types.</li>
-        <li><strong>HTTP/1.1:</strong> Improved speed by allowing persistent connections.</li>
-        <li><strong>HTTP/2:</strong> Improved performance by allowing multiple requests at once.</li>
-        <li><strong>HTTP/3:</strong> Uses QUIC to improve speed and reliability.</li>
-    </ul>
 </section>
 
 <section>
-    <h2>HTTPS and Security</h2>
-
+    <h2>HTTP/1.0</h2>
     <p>
-        HTTPS is the secure version of HTTP. It uses encryption to protect
-        information sent between a browser and a website. This is important
-        for passwords, payment information, personal data, and login pages.
+        HTTP/1.0 added request headers, response headers, status codes, and
+        support for different types of content. However, a new connection was
+        normally required for every request.
     </p>
+</section>
 
+<section>
+    <h2>HTTP/1.1</h2>
     <p>
-        A website using HTTPS usually shows a lock icon in the browser address bar.
-        This helps users know that the connection is more secure.
+        HTTP/1.1 improved performance by supporting persistent connections.
+        This allowed multiple requests to use the same connection instead of
+        opening a new one for every resource.
     </p>
+</section>
+
+<section>
+    <h2>HTTP/2</h2>
+    <p>
+        HTTP/2 introduced multiplexing, binary framing, and header compression.
+        Multiplexing allows several requests and responses to move through the
+        same connection at the same time, helping websites load faster.
+    </p>
+</section>
+
+<section>
+    <h2>HTTP/3</h2>
+    <p>
+        HTTP/3 uses QUIC instead of the traditional TCP connection used by
+        earlier versions. QUIC helps reduce delays and can perform better on
+        unstable networks or when a user changes between Wi-Fi and mobile data.
+    </p>
+</section>
+
+<section>
+    <h2>HTTPS and TLS</h2>
+    <p>
+        HTTPS is the secure form of HTTP. It uses Transport Layer Security,
+        also called TLS, to encrypt data exchanged between a browser and a
+        web server. This helps protect passwords, payment information, and
+        other sensitive data.
+    </p>
+</section>
+
+<section>
+    <h2>Why Web Security Matters</h2>
+    <p>
+        Without encryption, information sent over a network may be intercepted
+        or changed. HTTPS also helps users verify that they are communicating
+        with the correct website and not an impersonating server.
+    </p>
+</section>
+
+<section>
+    <h2>Safe Browsing Practices</h2>
+    <ul>
+        <li>Look for HTTPS before entering sensitive information.</li>
+        <li>Do not ignore browser security warnings.</li>
+        <li>Keep browsers and operating systems updated.</li>
+        <li>Use strong passwords and multi-factor authentication.</li>
+        <li>Avoid sending private information over untrusted networks.</li>
+    </ul>
 </section>
 
 </main>
@@ -64,7 +107,9 @@
 <footer>
     <p>
         This website was created as a class project for
-        <a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Web Development</a>.
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+            IT 3203 Web Development
+        </a>.
     </p>
 </footer>
 
