@@ -3,50 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Concepts</title>
+    <title>Key HTTP Concepts</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
     <h1>The Evolution of HTTP</h1>
-    <p>Key Concepts</p>
+    <p>Important HTTP Concepts</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="history.html">History</a>
     <a href="how-it-works.html">How HTTP Works</a>
-    <a href="versions-security.html">Versions & Security</a>
+    <a href="versions-security.html">Versions &amp; Security</a>
     <a href="key-concepts.html">Key Concepts</a>
     <a href="references.html">References</a>
     <a href="about.html">About</a>
+    <a href="quiz.html">Quiz</a>
 </nav>
 
 <main>
 
 <section>
-<h2>Important HTTP Concepts</h2>
+    <h2>HTTP Requests and Responses</h2>
 
-<ul>
-    <li><strong>HTTP:</strong> The protocol used to transfer web pages and other resources.</li>
-    <li><strong>HTTPS:</strong> The secure version of HTTP that encrypts data.</li>
-    <li><strong>URL:</strong> The web address used to locate a resource.</li>
-    <li><strong>Request:</strong> A message sent by a browser asking for information.</li>
-    <li><strong>Response:</strong> The information returned by the web server.</li>
-    <li><strong>Status Code:</strong> A number that tells whether the request succeeded.</li>
-    <li><strong>Web Server:</strong> A computer that stores and delivers websites.</li>
-</ul>
+    <p>
+        HTTP communication begins when a client, such as a web browser,
+        sends a request to a web server. The server processes the request
+        and sends back a response containing a status code, headers, and
+        sometimes a message body.
+    </p>
+</section>
 
+<section>
+    <h2>Common HTTP Methods</h2>
+
+    <ul>
+        <li><strong>GET:</strong> Retrieves information from a server.</li>
+        <li><strong>POST:</strong> Sends new information to a server.</li>
+        <li><strong>PUT:</strong> Updates or replaces an existing resource.</li>
+        <li><strong>DELETE:</strong> Removes a resource from a server.</li>
+        <li><strong>PATCH:</strong> Makes a partial update to a resource.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>HTTP Status Codes</h2>
+
+    <p>
+        Status codes tell the browser whether a request succeeded, failed,
+        or requires another action.
+    </p>
+
+    <ul>
+        <li><strong>100–199:</strong> Informational responses</li>
+        <li><strong>200–299:</strong> Successful responses</li>
+        <li><strong>300–399:</strong> Redirection responses</li>
+        <li><strong>400–499:</strong> Client errors</li>
+        <li><strong>500–599:</strong> Server errors</li>
+    </ul>
+</section>
+
+<section>
+    <h2>HTTP Headers</h2>
+
+    <p>
+        Headers provide additional details about a request or response.
+        They can describe the type of content being sent, the browser being
+        used, accepted languages, authorization information, and caching rules.
+    </p>
+</section>
+
+<section>
+    <h2>Cookies and Sessions</h2>
+
+    <p>
+        HTTP is stateless, which means each request is treated as a separate
+        interaction. Cookies and sessions allow websites to remember login
+        status, shopping-cart items, preferences, and other user information
+        across multiple requests.
+    </p>
+</section>
+
+<section>
+    <h2>HTTP Caching</h2>
+
+    <p>
+        Caching allows browsers and servers to store copies of resources.
+        When the same resource is requested again, a stored copy may be used,
+        which can improve loading speed and reduce network traffic.
+    </p>
 </section>
 
 </main>
 
 <footer>
-<p>
-This website was created as a class project for
-<a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Web Development</a>.
-</p>
+    <p>
+        This website was created as a class project for
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+            IT 3203 Web Development
+        </a>.
+    </p>
 </footer>
 
 </body>
