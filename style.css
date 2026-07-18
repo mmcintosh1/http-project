@@ -228,3 +228,117 @@ footer {
         padding: 18px;
     }
 }
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive tables */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    main {
+        width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Mobile phone layout */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 5px;
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 94%;
+        margin: 15px auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+    input[type="text"],
+    select,
+    textarea,
+    button {
+        width: 100%;
+        min-height: 44px;
+        box-sizing: border-box;
+    }
+
+    .question {
+        padding: 12px;
+    }
+
+    #submitQuiz,
+    #resetQuiz {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 14px;
+    }
+}
